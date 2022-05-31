@@ -1,15 +1,19 @@
 
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+function changePage(pageNumber, pageName) {
+  var indice = pageNumber;
+  var target = pageName;
+  var url = './../Telas/tela'+indice+'.html'
+
+  var xml = new XMLHttpRequest()
+
+  xml.onreadystatechange = function(){
+    if(xml.readyState == 4 && xml.status == 200){
+      document.getElementById(target).innerHTML = xml.responseText;
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
   }
+
+  xml.open("GET", url, true)
+
+  xml.send()
+}
   
