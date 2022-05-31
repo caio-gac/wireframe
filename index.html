@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+    <body>
+        <h2>Tabs</h2>
+        <p>Click on the buttons inside the tabbed menu:</p>
+        ​
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'basic')">basic</button>
+            <button class="tablinks" onclick="openCity(event, 'social')">social</button>
+            <button class="tablinks" onclick="openCity(event, 'certificate')">certificate</button>
+        </div>
+
+        <div id="basic" class="tabcontent">
+            <h3>Basic</h3>
+            <p>basic is the capital city of England.</p>
+        </div>
+        
+        <div id="social" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+        </div>
+        
+        <div id="certificate" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+    
+        <script type="module" src="./js/app.js"></script>
+    </body>
+</html> 
