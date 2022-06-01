@@ -6,20 +6,132 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+    .addButton {
+        display: flex;
+        margin-top: 3vh;
+        height: 5vh;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        .btnAdd {
+            border: white solid 2px;
+            width: 25vw;
+            height: 6vh;
+            font-size: 1rem;
+            background-color: #074EE8;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
     .tableContainer{
         text-align: center;
         display: flex;
-        width: 80vw;
+        width: 90vw;
         margin: 20px auto 0;  
         table {
             width: 100%;
+            height: 100%;
+            border-collapse: collapse; 
+            font-size: 0.9rem;
             .listTable {
                 justify-content: space-between;     
                 .headTable {
-                    border: black solid 1px;
-                    border-collapse: collapse;                   
-                }       
+                    border: #AAAAAA solid 1px;                            
+                }                  
+                .dataTr {
+                    .bodyTable {
+                        border: #AAAAAA solid 1px;                 
+                    } 
+                    .optionRef:hover {
+                        color: #074EE8;
+                        transform: scale(1.1);
+                        text-decoration: underline;
+                    }
+                    .optionRef {
+                        cursor: pointer;                       
+                    }
+                }               
             }
         }
     }
 }
+
+
+
+.containerModal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    background: rgba($color: black, $alpha: .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    
+
+    .modal {
+        background: white;
+        width: 60%;
+        min-width: 20%;
+        padding: 2%;
+        border: 7px solid #074EE8;
+        display: flex;    
+        justify-content: center;
+        text-align: center; 
+        .textModal {
+            display: flex;
+            list-style-type: none;    
+            justify-content: flex-start;
+
+        }
+
+    }
+
+    .fecharBtn {
+        padding: 10px;
+        width: 60%;
+        min-width: 20%;
+        display: flex;
+        justify-content:center;
+        align-items: flex-end;
+        .fecharModal {
+            width: 5vw;
+            height: 5vh;
+            border-radius: 50%;
+            text-align: center;
+            background:none;
+            color: white;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.9rem;
+            font-family: 'Nunito', sans-serif;
+            cursor: pointer;
+        }
+    }
+}
+
+.containerModal.mostrar {
+        display: flex;
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -60px, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .mostrar {
+        animation: modal .3s;
+    }
+
+    
