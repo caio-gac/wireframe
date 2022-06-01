@@ -16,8 +16,3 @@ function changePage(pageNumber, pageName) {
 
   xml.send()
 }
-  
-ageCalculate();
-
-ValidateEmail();
-
