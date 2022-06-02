@@ -15,43 +15,245 @@
         justify-content: center;
         .btnAdd {
             border: white solid 2px;
-            width: 25vw;
+            width: 50vw;
             height: 6vh;
-            font-size: 1rem;
+            font-size: 1.5rem;
             background-color: #074EE8;
             color: white;
             border-radius: 10px;
             cursor: pointer;
         }
     }
-    .tableContainer{
+    .showContainer{
         text-align: center;
         display: flex;
         width: 90vw;
-        margin: 20px auto 0;  
-        table {
-            width: 100%;
-            height: 100%;
-            border-collapse: collapse; 
-            font-size: 0.9rem;
-            .listTable {
-                justify-content: space-between;     
-                .headTable {
-                    border: #AAAAAA solid 1px;                            
-                }                  
-                .dataTr {
-                    .bodyTable {
-                        border: #AAAAAA solid 1px;                 
-                    } 
-                    .optionRef:hover {
-                        color: #074EE8;
-                        transform: scale(1.1);
-                        text-decoration: underline;
-                    }
-                    .optionRef {
-                        cursor: pointer;                       
-                    }
-                }               
+        height: 90vh;
+        margin: 10vh auto 0;  
+        flex-direction: column;
+        justify-content: flex-start;
+        .boderInput {
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 1%;
+            display: flex;
+            flex-direction: column;
+            border-top: #AAAAAA solid 2px;
+            .labelInput {
+                font-size: 1.3rem;
+                font-weight: bold;
+                text-align: start;
+            }
+            .label {
+                font-size: 1.2rem;
+                margin-bottom: 4%;
+                text-align: start;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+    .list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Nunito', sans-serif;
+        .addButton {
+            .btnAdd {
+                width: 50vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+        // background-color: blue;
+            width: 90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 1.3rem;
+                }
+                .label {
+                    font-size: 1.2rem;
+                    margin-bottom: 12%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 424px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 43vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+        // background-color: blue;
+            width: 90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 1.4rem;
+                }
+                .label {
+                    font-size: 1.3rem;
+                    margin-bottom: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 35vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+        // background-color: blue;
+            width: 90vw;
+            height: 90vh;
+            margin: 5vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 1.6rem;
+                }
+                .label {
+                    font-size: 1.4rem;
+                    margin-bottom: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 20vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+            width:  90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;    
+                .labelInput {
+                    font-size: 1.8rem;
+                }
+                .label {
+                    font-size: 1.6rem;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 17vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+            width: 90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 2rem;
+                }
+                .label {
+                    font-size: 1.8rem;
+                    margin-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 15vw;
+                height: 8vh;
+                font-size: 2rem;
+            }
+        }
+        .showContainer{
+            width: 90vw;
+            height: 90vh;
+            margin: 9vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 2.2rem;
+                }
+                .label {
+                    font-size: 2rem;
+                    margin-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 2560px){
+    .list {
+        .addButton {
+            margin-top: 7vh;
+            .btnAdd {
+                width: 13vw;
+                height: 10vh;
+                font-size: 2.9rem;
+            }
+        }
+        .showContainer{
+            width: 90vw;
+            height: 90vh;
+            margin: 8vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 2.8rem;
+                }
+                .label {
+                    font-size: 2.5rem;
+                    margin-bottom: 2%;
+                }
             }
         }
     }
@@ -59,79 +261,3 @@
 
 
 
-.containerModal {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    flex-direction: column;
-    top: 0px;
-    left: 0px;
-    background: rgba($color: black, $alpha: .5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-    
-
-    .modal {
-        background: white;
-        width: 60%;
-        min-width: 20%;
-        padding: 2%;
-        border: 7px solid #074EE8;
-        display: flex;    
-        justify-content: center;
-        text-align: center; 
-        .textModal {
-            display: flex;
-            list-style-type: none;    
-            justify-content: flex-start;
-
-        }
-
-    }
-
-    .fecharBtn {
-        padding: 10px;
-        width: 60%;
-        min-width: 20%;
-        display: flex;
-        justify-content:center;
-        align-items: flex-end;
-        .fecharModal {
-            width: 5vw;
-            height: 5vh;
-            border-radius: 50%;
-            text-align: center;
-            background:none;
-            color: white;
-            border: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 1.9rem;
-            font-family: 'Nunito', sans-serif;
-            cursor: pointer;
-        }
-    }
-}
-
-.containerModal.mostrar {
-        display: flex;
-    }
-
-    @keyframes modal {
-        from {
-            opacity: 0;
-            transform: translate3d(0, -60px, 0);
-        }
-        to {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    .mostrar {
-        animation: modal .3s;
-    }
-
-    
