@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27');
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    .addButton {
+        display: flex;
+        margin-top: 3vh;
+        height: 5vh;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        .btnAdd {
+            border: white solid 2px;
+            width: 50vw;
+            height: 6vh;
+            font-size: 1.5rem;
+            background-color: #074EE8;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+    .showContainer{
+        text-align: center;
+        display: flex;
+        width: 90vw;
+        height: 90vh;
+        margin: 10vh auto 0;  
+        flex-direction: column;
+        justify-content: flex-start;
+        .boderInput {
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 1%;
+            display: flex;
+            flex-direction: column;
+            border-top: #AAAAAA solid 2px;
+            .labelInput {
+                font-size: 1.3rem;
+                font-weight: bold;
+                text-align: start;
+            }
+            .label {
+                font-size: 1.2rem;
+                margin-bottom: 4%;
+                text-align: start;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+    .list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Nunito', sans-serif;
+        .addButton {
+            .btnAdd {
+                width: 50vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+        // background-color: blue;
+            width: 90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 1.3rem;
+                }
+                .label {
+                    font-size: 1.2rem;
+                    margin-bottom: 12%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 424px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 43vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+        // background-color: blue;
+            width: 90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 1.4rem;
+                }
+                .label {
+                    font-size: 1.3rem;
+                    margin-bottom: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 35vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+        // background-color: blue;
+            width: 90vw;
+            height: 90vh;
+            margin: 5vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 1.6rem;
+                }
+                .label {
+                    font-size: 1.4rem;
+                    margin-bottom: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 20vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+            width:  90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;    
+                .labelInput {
+                    font-size: 1.8rem;
+                }
+                .label {
+                    font-size: 1.6rem;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 17vw;
+                height: 6vh;
+                font-size: 1.5rem;
+            }
+        }
+        .showContainer{
+            width: 90vw;
+            height: 90vh;
+            margin: 6vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 2rem;
+                }
+                .label {
+                    font-size: 1.8rem;
+                    margin-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
+    .list {
+        .addButton {
+            .btnAdd {
+                width: 15vw;
+                height: 8vh;
+                font-size: 2rem;
+            }
+        }
+        .showContainer{
+            width: 90vw;
+            height: 90vh;
+            margin: 9vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 2.2rem;
+                }
+                .label {
+                    font-size: 2rem;
+                    margin-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 2560px){
+    .list {
+        .addButton {
+            margin-top: 7vh;
+            .btnAdd {
+                width: 13vw;
+                height: 10vh;
+                font-size: 2.9rem;
+            }
+        }
+        .showContainer{
+            width: 90vw;
+            height: 90vh;
+            margin: 8vh auto 0;  
+            .boderInput {
+                padding-left: 2%;
+                padding-right: 2%;
+                .labelInput {
+                    font-size: 2.8rem;
+                }
+                .label {
+                    font-size: 2.5rem;
+                    margin-bottom: 2%;
+                }
+            }
+        }
+    }
+}
+
+
+
