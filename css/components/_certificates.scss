@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$font-color: #767676;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    .certificates {
+        display: flex;
+        font-family: 'Nunito', sans-serif;
+        color: $font-color;
+        width: 100%;
+        .form-certificates {
+            margin: 5%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .conteiner {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+            .team-conteiner {
+                display: flex;
+                flex-direction: column;
+            }
+            .instituition-conteiner {
+                display: flex;
+                flex-direction: column;
+            }
+            .graduation-conteiner {
+                display: flex;
+                flex-direction: column;
+            }
+            .button-conteiner {
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+            label {
+                line-height: 16px;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 5vh;
+                margin-bottom: 1vh;
+            }
+            .inputText {
+                font-size: 10px;
+                font-weight: 400;
+                padding: 10px;
+                border: 2px solid #AAAAAA;
+                border-radius: 5px;
+            }
+            .cert {
+                position: relative;
+                width: 100%;
+                display: flex;
+                #certificate {
+                    width: 100%;
+                    padding: 10px 30px 10px 10px;
+                    font-size: 10px;
+                    font-weight: 400;
+                    border: 2px solid #AAAAAA;
+                    border-radius: 5px;
+                }
+                .heart {
+                    height: 16px;
+                    top: 50%;
+                    right: 0px;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            #moreButton {
+                margin-top: 20px;
+                color: #FFFFFF;
+                align-self: flex-end;
+                font-size: 14px;
+                font-weight: 400;
+                background-color: rgb(55, 55, 55);
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 16px;
+                    img {
+                        height: 12px;
+                    }
+            }
+            #finishButton {
+                margin-top: 20px;
+                color: #FFFFFF;
+                align-self: flex-end;
+                font-size: 14px;
+                font-weight: 400;
+                background-color: rgb(55, 55, 55);
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 16px;
+                    img {
+                        height: 12px;
+                    }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        .certificates{
+            .form-certificates {
+                .inputText {
+                    font-size: 12px;
+                }
+                .cert {
+                    #certificate {
+                        font-size: 12px;
+                    }
+                    .heart {
+                        height: 18px;
+                    }
+                }
+                #moreButton {
+                    font-size: 16px;
+                    line-height: 18px;
+                    img {
+                        height: 14px;
+                    }
+                }
+                #finishButton {
+                    font-size: 16px;
+                    line-height: 18px;
+                    img {
+                        height: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    body {
+        .certificates{
+            .form-certificates {
+                .inputText {
+                    font-size: 14px;
+                }
+                .cert {
+                    #certificate {
+                        font-size: 14px;
+                    }
+                    .heart {
+                        height: 20px;
+                    }
+                }
+                #moreButton {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                #finishButton {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        .certificates{
+            .form-certificates {
+                label {
+                    line-height: 22px;
+                    font-size: 20px;
+                }
+                .inputText {
+                    font-size: 20px;
+                }
+                .cert {
+                    #certificate {
+                        font-size: 20px;
+                        display: flex;
+                    }
+                    .heart {
+                        height: 24px;
+                    }
+                }
+                #moreButton {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+                #finishButton {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        .certificates{
+            .form-certificates {
+                display: flex;
+                flex-direction: column;
+                .conteiner {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .certificates-conteiner {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                .cert {
+                    width: 45%;
+                    margin-bottom: 1vh;
+                    #certificate {
+                        font-size: 20px;
+                        box-sizing: border-box;
+                    }
+                    .heart {
+                        height: 28px;
+                    }
+                }
+                .team-conteiner {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                }
+                .instituition-conteiner {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                }
+                .graduation-conteiner {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                }
+                label {
+                    width: 100%
+                }
+                .inputText {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                #moreButton {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+                #finishButton {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    body {
+        .certificates{
+            .form-certificates {
+                label {
+                    line-height: 30px;
+                    font-size: 28px;
+                }
+                .inputText {
+                    font-size: 28px;
+                }
+                .cert {
+                    #certificate {
+                        font-size: 28px;
+                        display: flex;
+                    }
+                    .heart {
+                        height: 32px;
+                    }
+                }
+                #moreButton {
+                    font-size: 28px;
+                    line-height: 30px;
+                    img {
+                        height: 20px;
+                    }
+                }
+                #finishButton {
+                    font-size: 28px;
+                    line-height: 30px;
+                    img {
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
