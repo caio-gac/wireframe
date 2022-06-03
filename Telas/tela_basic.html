@@ -1,42 +1,54 @@
-<div>
-    
-    <div>
+<div class="form">
+    <div class="full-name">
         <label for="">Full Name*</label>
-        <input type="text" id="1" required>
+        <input id="inp-name" type="text" required>
     </div>
-    <div>
+    <div class="nickname">
         <label for="">Nickname</label>
-        <input type="text" id="2">
+        <input id="inp-name" type="text">
     </div>
-    <div>
-        <label for="">Email*</label>
-        <input type="email" placeholder="foo@bar.com" required id="3">
-    </div>
-    <div>
-        <label for="">Phone</label>
-        <input type="text" name="" id="4" data-js="input">
-    </div>
-
-    <div>
-        <label for="">Birthday*</label>
-        <label for="">Day</label>
-        <input type="text" name="" id="">
-        <label for="">Month</label>
-        <input type="text"  name="" id="">
-        <label for="">Year</label>
-        <input type="text" name="" id="">
-        <label for="">Age</label>
-        <div>
-            <input type="text" id="age" readonly>
+    <div class="group-email">
+        <div class="email">
+            <label for="">Email*</label>
+            <input id="inp-email" type="email" placeholder="foo@bar.com" required>
         </div>
-
-    </div>
-    <div>
-        <input type="checkbox" checked> I accept the terms and privacy</input>
-    </div>
-    <div>
-        <button>NEXT</button>
+        <div class="phone">
+            <label for="">Phone</label>
+            <input id="inp-phone" type="text" placeholder="(83) 0000-0000" name="" id="">
+        </div>
     </div>
 
+    <div class="birthday">
+        <div class="text">
+            <label for="">Birthday*</label>
+        </div>
+        <div class="group-date">
+            <div class="date">
+                <label for="">Day</label>
+                <input type="text" name="day" id="inp-date">
+            </div>
+            <div class="date">
+                <label for="">Month</label>
+                <input type="text"  name="month" id="inp-date">
+            </div>
+            <div class="date">
+                <label for="">Year</label>
+                <input type="text" name="year" id="inp-date">
+            </div>
+                <div class="date">
+                <label for="">Age</label>
+            <div>
+                <input type="text" id="inp-date" readonly>
+            </div>
+        </div>
+    </div>
+        
+    <div class="checkbox">
+        <input id="inp-checkbox" type="checkbox" checked> I accept the terms and privacy</input>
+    </div>   
+    </div>
+    <div class="btn">
+        <button class="button">Next</button>
+    </div> 
 
 </div>

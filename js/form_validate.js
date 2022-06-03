@@ -1,5 +1,5 @@
 function validate(){
-    yesyes = 0
+    
     inputName = document.getElementById('name');
     inputEmail = document.getElementById('email');
     inputBirthday = document.getElementById('birth');
@@ -7,6 +7,6 @@ function validate(){
     if(x==null || x==""){
         alert('Por favor preencha o campo '+yesyes+'');
         document.getElementById(yesyes).focus();
-        return false;
+        return false;     
     }
 }
