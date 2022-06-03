@@ -1,13 +1,22 @@
-//usar onfocus ?
 function validate(){
     
     inputName = document.getElementById('name').value;
     inputEmail = document.getElementById('email').value;
     inputBirthday = document.getElementById('birth').value;
-    x = document.getElementById(yesyes).value;
-    if(x==null || x==""){
-        alert('Por favor preencha o campo '+(inputName || inputEmail || inputBirthday)+'');
-        document.getElementById(yesyes).focus();
+    
+    if(inputName==null || inputName==""){
+        alert('Por favor preencha o campo nome');
+        document.getElementById('name').focus();
+        return false;     
+    }
+    if(inputEmail==null || inputEmail==""){
+        alert('Por favor preencha o campo nome');
+        document.getElementById('Email').focus();
+        return false;     
+    }
+    if(inputEmail==null || inputEmail==""){
+        alert('Por favor preencha o campo nome');
+        document.getElementById('email').focus();
         return false;     
     }
 }

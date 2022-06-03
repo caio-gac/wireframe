@@ -1,4 +1,4 @@
-const $input = document.querySelector('[data-js="input"]')
+const $input = document.querySelector('.phone')
 $input.addEventListener('input', handleInput, false)
 
 function handleInput (e) {

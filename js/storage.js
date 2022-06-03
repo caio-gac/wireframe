@@ -1,4 +1,4 @@
-let input1 = document.querySelectorAll('#1'); 
+let input1 = document.querySelector('#1'); 
 let input2 = document.querySelector('#2'); 
 let input3 = document.querySelector('#3'); 
 
