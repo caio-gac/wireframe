@@ -1,4 +1,6 @@
-let input1 = document.querySelector('#1'); 
+let input1 = document.querySelectorAll('#1'); 
+let input2 = document.querySelector('#2'); 
+let input3 = document.querySelector('#3'); 
 
 
 function store(item_ids) {
@@ -28,8 +30,8 @@ function tempLocal(temp_ids){
         tempItems.push(`input${i}Value`);
     }
     if (items !== []) {
-        localStorage.getItem('ids');
+        localStorage.getItem('temp_ids');
     }
-    localStorage.setItem("item", JSON.stringify(items));
+    localStorage.setItem("item", JSON.stringify(tempItems));
     
 }

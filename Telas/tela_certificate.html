@@ -1,23 +1,51 @@
-<div>
-    <div>
-        <label for="">certificates</label>
-        <input type="text" name="" id="">   
-        <button>More</button>
-    </div>
-    <div>
-        <label for="">Team name*</label>
-        <input type="text" name="" id="">
-    </div>
-    <div>
-        <label for="">Institution*</label>
-        <input type="text" name="" id="">
-    </div>
-    <div>
-        <label for="">Graduation*</label>
-        <input type="text" name="" id="">
-    </div>
-    <div>
-        <button>FINISH</button>
-    </div>
-
+<div class="certificates">
+    <form action="" class="form-certificates">
+        <label for="certificate">Certificates</label>
+        <div class="certificates-conteiner"  id="certificates-conteiner">
+            <div class="cert">
+                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                <span class="priority">FALSE</span>
+                <img src="img/heart-0.svg" alt="" class="heart">
+            </div>
+            <div class="cert">
+                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                <span class="priority">FALSE</span>
+                <img src="img/heart-0.svg" alt="" class="heart">
+            </div>
+            <div class="cert">
+                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                <span class="priority">FALSE</span>
+                <img src="img/heart-0.svg" alt="" class="heart">
+            </div>
+            <div class="cert">
+                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                <span class="priority">FALSE</span>
+                <img src="img/heart-0.svg" alt="" class="heart">
+            </div>
+            <div class="cert">
+                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                <span class="priority">FALSE</span>
+                <img src="img/heart-0.svg" alt="" class="heart">
+            </div>
+        </div>
+        <button id="moreButton"><img src="img/more.svg" alt="">  More  <img src="img/next.svg" alt=""></button>
+        </br>
+        <div class="conteiner">
+            <div class="team-conteiner">
+                <label for="team-name">Team Name <span class="span-team-name">*</span></label>
+                <input type="text" name="team-name" id="team-name" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" class="inputText">
+            </div>
+            <div class="instituition-conteiner">
+                <label for="instituition">Instituition <span class="span-instuition">*</span></label>
+                <input type="text" name="instituition" id="instituition" placeholder="Universidade Federal da Paraíba" class="inputText">
+            </div>
+            <div class="graduation-conteiner">
+                <label for="graduation">Graduation <span class="span-graduation">*</span></label>
+                <input type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" class="inputText">
+            </div>
+        </div>
+        <div class="button-conteiner">
+            <button type="submit" id="finishButton"><img src="img/verified.svg" alt="">  Finish  </button>
+        </div>
+    </form>
 </div>
