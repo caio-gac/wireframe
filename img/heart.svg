@@ -1,17 +1,9 @@
-<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_3178_1820)">
-<path d="M15.6301 2.4574C15.247 2.07416 14.7922 1.77014 14.2916 1.56272C13.791 1.3553 13.2545 1.24854 12.7126 1.24854C12.1707 1.24854 11.6342 1.3553 11.1336 1.56272C10.633 1.77014 10.1782 2.07416 9.79509 2.4574L9.00009 3.2524L8.20509 2.4574C7.43132 1.68364 6.38186 1.24894 5.28759 1.24894C4.19331 1.24894 3.14386 1.68364 2.37009 2.4574C1.59632 3.23117 1.16162 4.28063 1.16162 5.3749C1.16162 6.46918 1.59632 7.51864 2.37009 8.2924L3.16509 9.0874L9.00009 14.9224L14.8351 9.0874L15.6301 8.2924C16.0133 7.90934 16.3174 7.45451 16.5248 6.95392C16.7322 6.45333 16.839 5.91677 16.839 5.3749C16.839 4.83304 16.7322 4.29648 16.5248 3.79589C16.3174 3.29529 16.0133 2.84047 15.6301 2.4574V2.4574Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"/>
-</g>
-<defs>
-<filter id="filter0_d_3178_1820" x="-3.83838" y="0.248535" width="25.6772" height="23.6738" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3178_1820"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3178_1820" result="shape"/>
-</filter>
-</defs>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>heart</title>
+	<defs>
+		<image  width="452" height="391" id="img1" href="data:image/png;base64,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"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="30" y="63"/>
 </svg>

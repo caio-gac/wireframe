@@ -116,6 +116,10 @@ body .certificates .form-certificates .cert #certificate {
   border-radius: 5px;
 }
 
+body .certificates .form-certificates .cert span {
+  display: none;
+}
+
 body .certificates .form-certificates .cert .heart {
   height: 16px;
   top: 50%;
