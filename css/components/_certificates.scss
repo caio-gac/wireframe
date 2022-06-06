@@ -17,6 +17,10 @@ body {
             display: flex;
             flex-direction: column;
             width: 100%;
+            .certificates-conteiner {
+                display: flex;
+                flex-direction: column;
+            }
             .conteiner {
                 display: flex;
                 flex-direction: column;

@@ -1,60 +1,45 @@
-let DOMButtonMore = document.getElementById("moreButton");
 let DOMButtonFinish = document.getElementById("finishButton");
 var DOMcertificates = document.querySelectorAll(".cert");
 let DOMCertContainer = document.getElementById("certificates-conteiner");
 let DOMHeart = document.querySelectorAll(".heart");
-let Cert = [];
-
-DOMcertificates.forEach(function(item){
-    Cert.push(item);
-});
+let Cert = 1;
 
 // Adiciona div de certificado
-DOMButtonMore.addEventListener("click", function () {
+function addDiv() {
     event.preventDefault();
-    if (Cert.length < 5) {
+    if (Cert < 5) {
         let div = document.createElement("div");
         div.classList.add("cert");
+        div.setAttribute("ondblclick", "deleteDiv(event);")
         div.innerHTML = `
                         <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                        <span class="priority">FALSE</span>
-                        <img src="img/heart-0.svg" alt="" class="heart">
+                        <img src="img/heart-0.svg" alt="" class="heart" onclick="fav(event);">
         `;
         DOMCertContainer.appendChild(div);
-        Cert.push(div);
+        Cert++;
     } else {
         alert("Maximum number of certificates reached...");
     }
-    
-});
-
+}
 
 // Delete
-DOMcertificates.forEach(
-    function (item) {
-        // delete
-        item.addEventListener("dblclick", function () {
-            // console.log(DOMCertContainer);
-            this.remove();
-        });
-    });
+    function deleteDiv(event) {
+        event.target.parentElement.remove();
+        Cert--;
+    };
 
 // Favorites
-DOMcertificates.forEach(
-    function (item) {
-        let priority = item.querySelector(".priority");
-        let heart = item.querySelector(".heart");
-
-        heart.addEventListener("click", function () {
-            if (priority.textContent == "FALSE") {
-                this.src = "../img/heart.svg"
-                priority.textContent = "TRUE";
-            } else {
-                this.src = "../img/heart-0.svg"
-                priority.textContent = "FALSE";
-            }
-        });
-    });
+function fav(event) {
+    if (event.target.getAttribute("src") == "img/heart-0.svg") {
+        event.target.setAttribute("src", "img/heart.svg");
+        event.target.parentElement.style.cssText = "order: -1; transition: 1s ease";
+        return;
+    } else {
+        event.target.setAttribute("src", "img/heart-0.svg");
+        event.target.parentElement.style.cssText = "order: 1; transition: 1s ease";
+        return;
+    }
+}
 
 DOMButtonFinish.addEventListener("click", function () {
     event.preventDefault();
@@ -65,19 +50,19 @@ DOMButtonFinish.addEventListener("click", function () {
     let certificates = [];
     let formCertificates = [];
     console.log(certs.value);
-    for (i = 0; i < 5; i++){
+    for (i = 0; i < 5; i++) {
         if (certs[i].value != "")
-        certificates.unshift(certs[i].value)
+            certificates.unshift(certs[i].value)
     }
-    if (team == "" || instituition == "" || graduation == ""){
+    if (team == "" || instituition == "" || graduation == "") {
         alert("Make sure all necessary data has been included!")
-    }else {
+    } else {
         formCertificates.push(certificates);
         formCertificates.push(team);
         formCertificates.push(instituition);
         formCertificates.push(graduation);
     }
-    
+
     console.log(formCertificates);
 
 });
