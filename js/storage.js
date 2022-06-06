@@ -4,19 +4,20 @@ function teste(){
     let input2 = document.querySelector('.inp-nickname').value;
     let input3 = document.querySelector('.inp-email').value;
     let input4 = document.querySelector('.inp-phone').value;
-    let input5 = document.querySelector('.inp-day').value;
-    let input6 = document.querySelector('.inp-month').value;
-    let input7 = document.querySelector('.inp-year').value;
-    let input8 = document.querySelector('.inp-check').value;
+    // let input5 = document.querySelector('.inp-day').value;
+    // let input6 = document.querySelector('.inp-month').value;
+    // let input7 = document.querySelector('.inp-year').value;
+    // let input8 = document.querySelector('.inp-check').value;
     console.log(input1)
     listTemp = ['name = '+ input1+ " " +
     "nick name = " +input2+ " " +
     "email = " +input3+ " " +
-    "phone = " +input4+ " " +
-    "day = " +input5+ " " +
-    "month = " +input6+ " " +
-    "year = " +input7+ " " +
-    "privacy = " +input8]
+    "phone = " +input4+ " " 
+    // "day = " +input5+ " " +
+    // "month = " +input6+ " " +
+    // "year = " +input7+ " " +
+    // "privacy = " +input8
+]
     localStorage.setItem('name', listTemp)
     localStorage.getItem('name')
 }

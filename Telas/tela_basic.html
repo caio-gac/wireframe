@@ -25,20 +25,20 @@
         <div class="group-date">
             <div class="date">
                 <label for="">Day</label>
-                <select  name="day" id="day" class="inp-day" onfocusout="teste()"></select>
+                <select  name="day" id="day" class="inp-day" onfocus="DataDay()" onfocusout="teste();ageCalculate()"></select>
             </div>
             <div class="date">
                 <label for="">Month</label>
-                <select  name="month" class="inp=month" id="month" onfocusout="teste()"></select>
+                <select  name="month" class="inp=month" id="month" onfocus="DataMonth()" onfocusout="teste();ageCalculate()"></select>
             </div>
             <div class="date">
                 <label for="">Year</label>
-                <select name="year" id="year" class="inp-year" onfocusout="teste()"></select>
+                <select name="year" id="year" class="inp-year" onfocus="DataYear()" onfocusout="teste();ageCalculate()"></select>
             </div>
             <div class="date">
                 <label for="">Age</label>
                 <div>
-                    <input type="text" id="inp-age" readonly>
+                    <input type="text" id="inp-age" class="ageIndex" readonly>
                 </div>
             </div>
         </div>
@@ -53,5 +53,6 @@
         
         <script src="/js/function.js"></script>
         <script src="/js/storage.js"></script>
+        <script src="/js/age.js"></script>
     
 </div>
