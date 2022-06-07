@@ -10,7 +10,7 @@ const select = document.querySelector('#day');
 day.forEach((value) => {  option =new Option(value, value); 
      select.options[select.options.length] = option;});
 } 
-DataDay();
+
 
 
 
@@ -25,7 +25,7 @@ const select = document.querySelector('#month');
 month.forEach((value) => {  option =new Option(value, value); 
      select.options[select.options.length] = option;});
 } 
-DataMonth();
+
 
 
 function DataYear(){
@@ -39,4 +39,3 @@ const select = document.querySelector('#year');
 year.forEach((value) => {  option =new Option(value, value); 
      select.options[select.options.length] = option;});
 } 
-DataYear();
