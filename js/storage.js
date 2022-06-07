@@ -8,7 +8,7 @@ function teste(){
     // let input6 = document.querySelector('.inp-month').value;
     // let input7 = document.querySelector('.inp-year').value;
     // let input8 = document.querySelector('.inp-check').value;
-    console.log(input1)
+    // console.log(input1)
     listTemp = ['name = '+ input1+ " " +
     "nick name = " +input2+ " " +
     "email = " +input3+ " " +
