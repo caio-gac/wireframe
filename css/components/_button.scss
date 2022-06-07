@@ -1,0 +1,115 @@
+.btn{
+    justify-content: flex-end;
+    display: flex;
+    
+    .button{
+    background-color: #074EE8;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    height: 80px;
+    font-size: 25px;
+    width: 160px;
+    margin-top: 350px;
+    }
+    img{
+        height: 20px;
+        margin-left: 10px;
+    }
+
+
+}
+.btn1{
+    justify-content: flex-end;
+    display: flex;
+
+    .button1{
+        background-color: #074EE8;
+        border-radius: 4px;
+        color: white;
+        border: none;
+        height: 80px;
+        font-size: 25px;
+        width: 160px;
+        margin-top: 950px;
+        }
+        img{
+            height: 20px;
+            margin-left: 10px;
+        }
+      
+}
+
+@media (min-width:1024px) and (max-width: 1024px) {
+    .btn{
+     .button{
+         height: 50px;
+         width: 120px;
+         margin-top: 40px;
+         font-size: 20px;
+    }   
+    img{
+        height: 15px;
+    }
+}
+.btn1{
+    .button1{
+        height: 50px;
+        width: 120px;
+        margin-top: 220px;
+        font-size: 20px;
+   }   
+   img{
+       height: 15px;
+   }
+}
+}
+
+@media (min-width:1440px) and (max-width: 1440px) {
+    .btn{
+     .button{
+         height: 50px;
+         width: 120px;
+         font-size: 20px;
+         margin-top: 40px;
+    }   
+    img{
+        height: 15px;
+    }
+}
+.btn1{
+    .button1{
+        height: 50px;
+        width: 120px;
+        font-size: 20px;
+        margin-top: 230px;
+   }   
+   img{
+       height: 15px;
+   }
+}
+}
+@media (min-width:2560px) and (max-width: 2560px) {
+    .btn{
+     .button{
+         height: 70px;
+         width: 150px;
+         font-size: 32px;
+         margin-top: 150px;
+    }   
+    img{
+        height: 20px;
+    }
+}
+    .btn1{
+     .button1{
+         height: 90px;
+         width: 190px;
+         font-size: 36px;
+         margin-top: 700px;
+    }   
+    img{
+        height: 25px;
+    }
+}
+}

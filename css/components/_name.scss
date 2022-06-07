@@ -1,0 +1,62 @@
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 35px;
+    .full-name{
+        margin-top: 25px;
+        color: #767676;
+    }
+    #inp-name{
+        width: 100%;
+        border-radius: 5px;
+        height: 70px;
+        margin-top: 15px;
+        font-size: 30px;
+        border: 3px solid #AAAAAA;
+    }
+       
+    .nickname{
+        margin-top: 60px;
+        color: #767676;
+    }
+    }
+
+    @media (min-width:1024px) and (max-width: 1024px) {
+        .form{
+            font-size: 20px;
+            .full-name{
+                margin-top: -30px;
+            }
+             #inp-name{
+                 height: 30px;
+                 margin-top: 10px;
+                 font-size: 20px;
+             }
+             .nickname{
+                margin-top: 30px;
+             }
+        }
+    }
+    @media (min-width:1440px) and (max-width: 1440px) {
+        .form{
+            font-size: 20px;
+            .full-name{
+                margin-top: -30px;
+            }
+             #inp-name{
+                 height: 30px;
+                 margin-top: 10px;
+                 font-size: 20px;
+             }
+             .nickname{
+                margin-top: 30px;
+             }
+        }
+
+    }
+
+
+   
+

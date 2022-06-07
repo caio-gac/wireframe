@@ -1,0 +1,68 @@
+.group-email{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+
+    .email{
+        flex-direction: column;
+        display: flex;
+        color: #767676;
+        }
+        #inp-email{
+            width: 110%;
+            height: 70px;
+            border-radius: 5px;
+            font-size: 30px;
+            margin-top: 5px;
+            border: 3px solid #AAAAAA;
+        }
+    .phone{
+        flex-direction: column;
+        display: flex;
+        color: #767676;
+        }
+        #inp-phone{
+            height: 70px;
+            border-radius: 5px;
+            font-size: 30px;
+            margin-top: 5px;
+            border: 3px solid #AAAAAA;
+        }
+}
+
+@media (min-width:1024px) and (max-width: 1024px) {
+    .group-email{
+        margin-top: 30px;
+    .email
+        #inp-email{
+            height: 30px;
+            font-size: 20px;
+        }
+    .phone{
+            #inp-phone{
+                height: 30px;
+                font-size: 20px;
+            }
+        
+        }
+    
+}
+}
+@media (min-width:1440px) and (max-width: 1440px) {
+    .group-email{
+        margin-top: 30px;
+    .email
+        #inp-email{
+            height: 30px;
+            font-size: 20px;
+        }
+    .phone{
+            #inp-phone{
+                height: 30px;
+                font-size: 20px;
+            }
+        
+        }
+    
+}
+}

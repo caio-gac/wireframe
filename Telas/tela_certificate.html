@@ -4,31 +4,11 @@
         <div class="certificates-conteiner"  id="certificates-conteiner">
             <div class="cert">
                 <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                <span class="priority">FALSE</span>
-                <img src="img/heart-0.svg" alt="" class="heart">
-            </div>
-            <div class="cert">
-                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                <span class="priority">FALSE</span>
-                <img src="img/heart-0.svg" alt="" class="heart">
-            </div>
-            <div class="cert">
-                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                <span class="priority">FALSE</span>
-                <img src="img/heart-0.svg" alt="" class="heart">
-            </div>
-            <div class="cert">
-                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                <span class="priority">FALSE</span>
-                <img src="img/heart-0.svg" alt="" class="heart">
-            </div>
-            <div class="cert">
-                <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                <span class="priority">FALSE</span>
-                <img src="img/heart-0.svg" alt="" class="heart">
+                <img src="img/garbage.svg" alt="" class="garbage" onclick="deleteDiv(event);">
+                <img src="img/heart-0.svg" alt="" class="heart" onclick="fav(event);">
             </div>
         </div>
-        <button id="moreButton"><img src="img/more.svg" alt="">  More  <img src="img/next.svg" alt=""></button>
+        <button id="moreButton" onclick="addDiv();"><img src="img/more.svg" alt="">  More  <img src="img/next.svg" alt=""></button>
         </br>
         <div class="conteiner">
             <div class="team-conteiner">
@@ -48,5 +28,5 @@
             <button type="submit" id="finishButton"><img src="img/verified.svg" alt="">  Finish  </button>
         </div>
     </form>
-    <script src="/js/certificates.js"></script>
+    <script src="js/certificates.js"></script>
 </div>
