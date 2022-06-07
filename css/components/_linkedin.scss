@@ -1,0 +1,48 @@
+.group-linkedin{
+    display: flex;
+    margin-top:5px;
+    width: 100%;
+}
+.linkgit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #767676;
+}
+.group-github{
+    display: flex;
+    margin-top:80px;
+}
+
+#inp-linkgit{
+    border-radius: 5px;
+    height: 70px;
+    font-size: 30px;
+    margin-top: 15px;
+    border: 2px solid #AAAAAA;
+}
+
+
+@media (min-width:1024px) and (max-width: 1024px) {
+        #inp-linkgit{
+        height: 30px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    }
+@media (min-width:1440px) and (max-width: 1440px) {
+
+      #inp-linkgit{
+        height: 35px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+@media (min-width:2560px) and (max-width: 2560px) {
+
+    #inp-linkgit{
+      height: 65px;
+      font-size: 35px;
+      margin-top: 15px;
+  }
+}

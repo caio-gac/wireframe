@@ -20,6 +20,16 @@
   width: 100%;
 }
 
+.certificates .form-certificates .certificates-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .certificates .form-certificates .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,22 +104,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2vh;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .certificates .form-certificates .cert #certificate {
   width: 100%;
-  padding: 10px 30px 10px 10px;
+  padding: 10px 55px 10px 10px;
   font-size: 10px;
   font-weight: 400;
   border: 2px solid #AAAAAA;
   border-radius: 5px;
 }
 
-.certificates .form-certificates .cert span {
-  display: none;
+.certificates .form-certificates .cert .heart {
+  height: 16px;
+  top: 50%;
+  right: 25px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.certificates .form-certificates .cert .heart {
+.certificates .form-certificates .cert .garbage {
   height: 16px;
   top: 50%;
   right: 0px;
@@ -155,80 +173,91 @@
 }
 
 @media only screen and (min-width: 375px) {
-  .certificates .form-certificates .inputText {
+  body .certificates .form-certificates .inputText {
     font-size: 12px;
   }
-  .certificates .form-certificates .cert #certificate {
+  body .certificates .form-certificates .cert #certificate {
     font-size: 12px;
   }
-  .certificates .form-certificates .cert .heart {
+  body .certificates .form-certificates .cert .heart {
     height: 18px;
   }
-  .certificates .form-certificates #moreButton {
+  body .certificates .form-certificates .cert .garbage {
+    height: 18px;
+  }
+  body .certificates .form-certificates #moreButton {
     font-size: 16px;
     line-height: 18px;
   }
-  .certificates .form-certificates #moreButton img {
+  body .certificates .form-certificates #moreButton img {
     height: 14px;
   }
-  .certificates .form-certificates #finishButton {
+  body .certificates .form-certificates #finishButton {
     font-size: 16px;
     line-height: 18px;
   }
-  .certificates .form-certificates #finishButton img {
+  body .certificates .form-certificates #finishButton img {
     height: 14px;
   }
 }
 
 @media only screen and (min-width: 425px) {
-  .certificates .form-certificates .inputText {
+  body .certificates .form-certificates .inputText {
     font-size: 14px;
   }
-  .certificates .form-certificates .cert #certificate {
+  body .certificates .form-certificates .cert #certificate {
     font-size: 14px;
   }
-  .certificates .form-certificates .cert .heart {
+  body .certificates .form-certificates .cert .heart {
     height: 20px;
   }
-  .certificates .form-certificates #moreButton {
+  body .certificates .form-certificates .cert .garbage {
+    height: 20px;
+  }
+  body .certificates .form-certificates #moreButton {
     font-size: 16px;
     line-height: 18px;
   }
-  .certificates .form-certificates #finishButton {
+  body .certificates .form-certificates #finishButton {
     font-size: 16px;
     line-height: 18px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .certificates .form-certificates label {
+  body .certificates .form-certificates label {
     line-height: 22px;
     font-size: 20px;
   }
-  .certificates .form-certificates .inputText {
+  body .certificates .form-certificates .inputText {
     font-size: 20px;
   }
-  .certificates .form-certificates .cert #certificate {
+  body .certificates .form-certificates .cert #certificate {
     font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-right: 80px;
   }
-  .certificates .form-certificates .cert .heart {
+  body .certificates .form-certificates .cert .heart {
+    right: 40px;
     height: 24px;
   }
-  .certificates .form-certificates #moreButton {
+  body .certificates .form-certificates .cert .garbage {
+    height: 24px;
+  }
+  body .certificates .form-certificates #moreButton {
     font-size: 20px;
     line-height: 22px;
   }
-  .certificates .form-certificates #finishButton {
+  body .certificates .form-certificates #finishButton {
     font-size: 20px;
     line-height: 22px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .certificates .form-certificates {
+  body .certificates .form-certificates {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -237,7 +266,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .certificates .form-certificates .conteiner {
+  body .certificates .form-certificates .conteiner {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -252,7 +281,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .certificates .form-certificates .certificates-conteiner {
+  body .certificates .form-certificates .certificates-conteiner {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -267,19 +296,25 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .certificates .form-certificates .cert {
+  body .certificates .form-certificates .cert {
     width: 45%;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
   }
-  .certificates .form-certificates .cert #certificate {
+  body .certificates .form-certificates .cert #certificate {
     font-size: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    padding-right: 90px;
   }
-  .certificates .form-certificates .cert .heart {
+  body .certificates .form-certificates .cert .heart {
     height: 28px;
   }
-  .certificates .form-certificates .team-conteiner {
+  body .certificates .form-certificates .cert .garbage {
+    height: 28px;
+  }
+  body .certificates .form-certificates .team-conteiner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,7 +324,7 @@
             flex-direction: column;
     width: 45%;
   }
-  .certificates .form-certificates .instituition-conteiner {
+  body .certificates .form-certificates .instituition-conteiner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -299,7 +334,7 @@
             flex-direction: column;
     width: 45%;
   }
-  .certificates .form-certificates .graduation-conteiner {
+  body .certificates .form-certificates .graduation-conteiner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -309,53 +344,57 @@
             flex-direction: column;
     width: 45%;
   }
-  .certificates .form-certificates label {
+  body .certificates .form-certificates label {
     width: 100%;
   }
-  .certificates .form-certificates .inputText {
+  body .certificates .form-certificates .inputText {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .certificates .form-certificates #moreButton {
+  body .certificates .form-certificates #moreButton {
     font-size: 20px;
     line-height: 22px;
   }
-  .certificates .form-certificates #finishButton {
+  body .certificates .form-certificates #finishButton {
     font-size: 20px;
     line-height: 22px;
   }
 }
 
 @media only screen and (min-width: 2560px) {
-  .certificates .form-certificates label {
+  body .certificates .form-certificates label {
     line-height: 30px;
     font-size: 28px;
   }
-  .certificates .form-certificates .inputText {
+  body .certificates .form-certificates .inputText {
     font-size: 28px;
   }
-  .certificates .form-certificates .cert #certificate {
+  body .certificates .form-certificates .cert #certificate {
     font-size: 28px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-right: 100px;
   }
-  .certificates .form-certificates .cert .heart {
+  body .certificates .form-certificates .cert .heart {
     height: 32px;
   }
-  .certificates .form-certificates #moreButton {
+  body .certificates .form-certificates .cert .garbage {
+    height: 32px;
+  }
+  body .certificates .form-certificates #moreButton {
     font-size: 28px;
     line-height: 30px;
   }
-  .certificates .form-certificates #moreButton img {
+  body .certificates .form-certificates #moreButton img {
     height: 20px;
   }
-  .certificates .form-certificates #finishButton {
+  body .certificates .form-certificates #finishButton {
     font-size: 28px;
     line-height: 30px;
   }
-  .certificates .form-certificates #finishButton img {
+  body .certificates .form-certificates #finishButton img {
     height: 20px;
   }
 }
@@ -624,6 +663,591 @@
   .list .showContainer .boderInput .label {
     font-size: 2.5rem;
     margin-bottom: 2%;
+  }
+}
+
+.header-principal {
+  width: 100%;
+  margin-bottom: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-principal .title {
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.header-principal .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  height: 100px;
+  border-bottom: 2px solid #AAAAAA;
+}
+
+.header-principal .tablinks {
+  border: none;
+  background-color: white;
+  font-size: 40px;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .header-principal .title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .header-principal .tab {
+    height: 40px;
+  }
+  .header-principal .tablinks {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .header-principal .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .header-principal .tab {
+    height: 40px;
+  }
+  .header-principal .tablinks {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 2560px) {
+  .header-principal .title
+.tab
+.tablinks {
+    font-size: 30px;
+  }
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+body .principal {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  height: 100vh;
+  padding: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content-principal {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  font-size: 35px;
+}
+
+.form .full-name {
+  margin-top: 25px;
+  color: #767676;
+}
+
+.form #inp-name {
+  width: 100%;
+  border-radius: 5px;
+  height: 70px;
+  margin-top: 15px;
+  font-size: 30px;
+  border: 3px solid #AAAAAA;
+}
+
+.form .nickname {
+  margin-top: 60px;
+  color: #767676;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .form {
+    font-size: 20px;
+  }
+  .form .full-name {
+    margin-top: -30px;
+  }
+  .form #inp-name {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .form .nickname {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .form {
+    font-size: 20px;
+  }
+  .form .full-name {
+    margin-top: -30px;
+  }
+  .form #inp-name {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .form .nickname {
+    margin-top: 30px;
+  }
+}
+
+.group-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.group-email .email {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #767676;
+}
+
+.group-email #inp-email {
+  width: 110%;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 30px;
+  margin-top: 5px;
+  border: 3px solid #AAAAAA;
+}
+
+.group-email .phone {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #767676;
+}
+
+.group-email #inp-phone {
+  height: 70px;
+  border-radius: 5px;
+  font-size: 30px;
+  margin-top: 5px;
+  border: 3px solid #AAAAAA;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .group-email {
+    margin-top: 30px;
+  }
+  .group-email .email
+#inp-email {
+    height: 30px;
+    font-size: 20px;
+  }
+  .group-email .phone #inp-phone {
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .group-email {
+    margin-top: 30px;
+  }
+  .group-email .email
+#inp-email {
+    height: 30px;
+    font-size: 20px;
+  }
+  .group-email .phone #inp-phone {
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+.birthday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.birthday .text {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #767676;
+}
+
+.birthday .group-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.birthday .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #767676;
+}
+
+.birthday #day {
+  width: 150px;
+  height: 70px;
+  border: 3px solid #AAAAAA;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #767676;
+}
+
+.birthday #month {
+  width: 180px;
+  height: 70px;
+  border: 3px solid #AAAAAA;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #767676;
+}
+
+.birthday #year {
+  width: 180px;
+  height: 70px;
+  border: 3px solid #AAAAAA;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #767676;
+}
+
+.birthday #inp-age {
+  width: 180px;
+  height: 70px;
+  border: 3px solid #AAAAAA;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #767676;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .birthday {
+    margin-top: 30px;
+  }
+  .birthday .text {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .birthday .group-date {
+    margin-top: 20px;
+  }
+  .birthday .date #day {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .birthday .date #month {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .birthday .date #year {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .birthday .date #inp-age {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .birthday {
+    margin-top: 30px;
+  }
+  .birthday .text {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .birthday .group-date {
+    margin-top: 20px;
+  }
+  .birthday .date #day {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .birthday .date #month {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .birthday .date #year {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .birthday .date #inp-age {
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+
+.checkbox {
+  margin-top: 100px;
+}
+
+.checkbox #inp-checkbox {
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: 0px 3px 6px black;
+          box-shadow: 0px 3px 6px black;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .checkbox {
+    margin-top: 50px;
+  }
+  .checkbox #inp-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .checkbox {
+    margin-top: 50px;
+  }
+  .checkbox #inp-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.btn {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn .button {
+  background-color: #074EE8;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  height: 80px;
+  font-size: 25px;
+  width: 160px;
+  margin-top: 350px;
+}
+
+.btn img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.btn1 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn1 .button1 {
+  background-color: #074EE8;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  height: 80px;
+  font-size: 25px;
+  width: 160px;
+  margin-top: 950px;
+}
+
+.btn1 img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .btn .button {
+    height: 50px;
+    width: 120px;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .btn img {
+    height: 15px;
+  }
+  .btn1 .button1 {
+    height: 50px;
+    width: 120px;
+    margin-top: 220px;
+    font-size: 20px;
+  }
+  .btn1 img {
+    height: 15px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .btn .button {
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .btn img {
+    height: 15px;
+  }
+  .btn1 .button1 {
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    margin-top: 230px;
+  }
+  .btn1 img {
+    height: 15px;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 2560px) {
+  .btn .button {
+    height: 70px;
+    width: 150px;
+    font-size: 32px;
+    margin-top: 150px;
+  }
+  .btn img {
+    height: 20px;
+  }
+  .btn1 .button1 {
+    height: 90px;
+    width: 190px;
+    font-size: 36px;
+    margin-top: 700px;
+  }
+  .btn1 img {
+    height: 25px;
+  }
+}
+
+.group-linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.linkgit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  color: #767676;
+}
+
+.group-github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+#inp-linkgit {
+  border-radius: 5px;
+  height: 70px;
+  font-size: 30px;
+  margin-top: 15px;
+  border: 2px solid #AAAAAA;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  #inp-linkgit {
+    height: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  #inp-linkgit {
+    height: 35px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 2560px) {
+  #inp-linkgit {
+    height: 65px;
+    font-size: 35px;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
