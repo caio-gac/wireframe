@@ -1,5 +1,5 @@
-const $input = document.querySelector('.phone')
-$input.addEventListener('input', handleInput, false)
+const input = document.querySelector('.inp-phone')
+input.addEventListener('input', handleInput, false)
 
 function handleInput (e) {
   e.target.value = phoneMask(e.target.value)

@@ -6,7 +6,7 @@ function ValidateEmail(input) {
   
       alert("Valid email address!");
   
-      document.getElementById('emailIndex').focus();
+      document.querySelector('#inp-email').focus();
   
       return true;
   
@@ -14,7 +14,7 @@ function ValidateEmail(input) {
   
       alert("Invalid email address!");
   
-      document.getElementById('emailIndex').focus();
+      document.getElementById('#inp-email').focus();
   
       return false;
   
