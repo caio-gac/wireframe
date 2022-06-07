@@ -8,5 +8,6 @@ function ageCalculate(){
     let ageToDate = new Date(monthDiff);    
     let year = ageToDate.getUTCFullYear();
     let age = Math.abs(year - 1970);
+    console.log(age)
     return document.getElementById('ageIndex').innerHTML = age;
 }
