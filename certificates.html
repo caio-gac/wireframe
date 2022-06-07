@@ -12,13 +12,13 @@
     <div class="certificates">
         <form action="" class="form-certificates">
             <label for="certificate">Certificates</label>
-            <div class="certificates-conteiner">
-                <div class="cert">
+            <div class="certificates-conteiner"  id="certificates-conteiner">
+                <div class="cert" ondblclick="deleteDiv(event);">
                     <input type="text" name="certificate" id="certificate" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                    <img src="img/heart.png" alt="" class="heart">
+                    <img src="img/heart-0.svg" alt="" class="heart" onclick="fav(event);">
                 </div>
             </div>
-            <button id="moreButton"><img src="img/more.svg" alt="">  More  <img src="img/next.svg" alt=""></button>
+            <button id="moreButton" onclick="addDiv();"><img src="img/more.svg" alt="">  More  <img src="img/next.svg" alt=""></button>
             </br>
             <div class="conteiner">
                 <div class="team-conteiner">
@@ -39,5 +39,7 @@
             </div>
         </form>
     </div>
+
+    <script src="js/certificates.js"></script>
 </body>
 </html>
