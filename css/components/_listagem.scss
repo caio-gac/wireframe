@@ -21,6 +21,7 @@
             justify-content: center;
             a {
                 display: flex;
+                text-decoration: none;
                 .btnAdd {
                     border: white solid 2px;
                     width: 50vw;
@@ -56,7 +57,7 @@
                     .labelInput {
                         width: 100%;
                         display: flex;
-                        border: #AAAAAA solid 4px;
+                        border: #AAAAAA solid 2px;
                         font-size: 1.3rem;
                         font-weight: bold;
                         text-align: start; 
@@ -188,9 +189,11 @@
     .bodyClass{
         .list {
             .addButton {
-                margin-bottom: 1%;
+                height: 15vh;
+                margin-top: 0.5%;
+                margin-bottom: 0.5%;
                 a {
-                    height: 95%;
+                    height: 100%;
                     width: 10%;
                     .btnAdd {
                         width: 100%;
@@ -200,6 +203,7 @@
                 }              
             } 
             .showContainer{
+                margin-bottom:2% ;
                 .boderInput{
                     div {
                         .labelInput{
