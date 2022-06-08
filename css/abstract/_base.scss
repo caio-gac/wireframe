@@ -1,9 +1,9 @@
-body{
+body {
     font-family: 'Nunito', sans-serif;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
 
-   .principal{
+    .principal {
         flex-direction: column;
         max-width: 100%;
         height: 100vh;
@@ -12,7 +12,7 @@ body{
 
     }
 
-    .content-principal{
+    .content-principal {
         flex-direction: column;
         max-width: 100%;
         height: 100vh;

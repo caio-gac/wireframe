@@ -44,16 +44,16 @@ localStorageData.forEach(data => {
             if(data[1].fav === true){
 
                 pContainer.innerHTML = `
-                    <p class="labelInput">Certificate: ${(data[1].certificate)} <br> Favorite: Yes </p>
+                    <label class="labelInput">Certificate: ${(data[1].certificate)} <br> Favorite: Yes </label>
                 `
             }else{
                 pContainer.innerHTML = `
-                    <p class="labelInput">Certificate: ${(data[1].certificate)} <br> Favorite: No </p>
+                    <label class="labelInput">Certificate: ${(data[1].certificate)} <br> Favorite: No </label>
                 `
             }
         }else{
             pContainer.innerHTML = `
-                    <p class="labelInput">${data[0]}: ${data[1]}</p>
+                    <label class="labelInput">${data[0]}: ${data[1]}</label>
                 `     
         }     
     }else{  

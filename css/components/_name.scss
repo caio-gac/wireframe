@@ -5,10 +5,14 @@
     height: 100vh;
     font-size: 35px;
     .full-name{
+        display: flex;
+        flex-direction: column;
         margin-top: 25px;
         color: #767676;
     }
     #inp-name{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         border-radius: 5px;
         height: 70px;
@@ -18,6 +22,8 @@
     }
        
     .nickname{
+        display: flex;
+        flex-direction: column;
         margin-top: 60px;
         color: #767676;
     }
