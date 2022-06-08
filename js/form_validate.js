@@ -1,22 +1,22 @@
 function validate(){
     
-    inputName = document.getElementById('name').value;
-    inputEmail = document.getElementById('email').value;
-    inputBirthday = document.getElementById('birth').value;
+    inputName = document.querySelector('#name').value;
+    inputEmail = document.querySelector('#email').value;
+    inputBirthday = document.querySelector('#birth').value;
     
     if(inputName==null || inputName==""){
         alert('Por favor preencha o campo nome');
-        document.getElementById('name').focus();
+        document.querySelector('#name').focus();
         return false;     
     }
     if(inputEmail==null || inputEmail==""){
         alert('Por favor preencha o campo nome');
-        document.getElementById('Email').focus();
+        document.querySelector('Email').focus();
         return false;     
     }
     if(inputEmail==null || inputEmail==""){
         alert('Por favor preencha o campo nome');
-        document.getElementById('email').focus();
+        document.querySelector('email').focus();
         return false;     
     }
 }
