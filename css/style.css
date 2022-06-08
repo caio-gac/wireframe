@@ -399,7 +399,7 @@
   }
 }
 
-body {
+.bodyClass {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +407,7 @@ body {
   width: 100vw;
 }
 
-body .list {
+.bodyClass .list {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -424,7 +424,7 @@ body .list {
   margin: 0 5%;
 }
 
-body .list .addButton {
+.bodyClass .list .addButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,13 +439,13 @@ body .list .addButton {
           justify-content: center;
 }
 
-body .list .addButton a {
+.bodyClass .list .addButton a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .list .addButton a .btnAdd {
+.bodyClass .list .addButton a .btnAdd {
   border: white solid 2px;
   width: 50vw;
   height: 100%;
@@ -456,7 +456,7 @@ body .list .addButton a .btnAdd {
   cursor: pointer;
 }
 
-body .list .showContainer {
+.bodyClass .list .showContainer {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,7 +473,7 @@ body .list .showContainer {
   margin-bottom: 5%;
 }
 
-body .list .showContainer .boderInput {
+.bodyClass .list .showContainer .boderInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +488,7 @@ body .list .showContainer .boderInput {
       justify-content: space-around;
 }
 
-body .list .showContainer .boderInput div {
+.bodyClass .list .showContainer .boderInput div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +498,7 @@ body .list .showContainer .boderInput div {
   width: 100%;
 }
 
-body .list .showContainer .boderInput div .labelInput {
+.bodyClass .list .showContainer .boderInput div .labelInput {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,10 +515,10 @@ body .list .showContainer .boderInput div .labelInput {
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-  body .list .addButton a {
+  .bodyClass .list .addButton a {
     height: 65%;
   }
-  body .list .addButton a .btnAdd {
+  .bodyClass .list .addButton a .btnAdd {
     width: 50vw;
     height: 100%;
     font-size: 1.5rem;
@@ -526,11 +526,11 @@ body .list .showContainer .boderInput div .labelInput {
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
-  body .list .addButton a {
+  .bodyClass .list .addButton a {
     height: 65%;
     width: 40%;
   }
-  body .list .addButton a .btnAdd {
+  .bodyClass .list .addButton a .btnAdd {
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
@@ -538,11 +538,11 @@ body .list .showContainer .boderInput div .labelInput {
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
-  body .list .addButton a {
+  .bodyClass .list .addButton a {
     height: 65%;
     width: 40%;
   }
-  body .list .addButton a .btnAdd {
+  .bodyClass .list .addButton a .btnAdd {
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
@@ -550,11 +550,11 @@ body .list .showContainer .boderInput div .labelInput {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  body .list .addButton a {
+  .bodyClass .list .addButton a {
     height: 70%;
     width: 25%;
   }
-  body .list .addButton a .btnAdd {
+  .bodyClass .list .addButton a .btnAdd {
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
@@ -562,11 +562,11 @@ body .list .showContainer .boderInput div .labelInput {
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  body .list .addButton a {
+  .bodyClass .list .addButton a {
     height: 75%;
     width: 20%;
   }
-  body .list .addButton a .btnAdd {
+  .bodyClass .list .addButton a .btnAdd {
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
@@ -574,11 +574,11 @@ body .list .showContainer .boderInput div .labelInput {
 }
 
 @media (min-width: 1440px) and (max-width: 2559px) {
-  body .list .addButton a {
+  .bodyClass .list .addButton a {
     height: 85%;
     width: 15%;
   }
-  body .list .addButton a .btnAdd {
+  .bodyClass .list .addButton a .btnAdd {
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
@@ -586,19 +586,19 @@ body .list .showContainer .boderInput div .labelInput {
 }
 
 @media (min-width: 2560px) {
-  body .list .addButton {
+  .bodyClass .list .addButton {
     margin-bottom: 1%;
   }
-  body .list .addButton a {
+  .bodyClass .list .addButton a {
     height: 95%;
     width: 10%;
   }
-  body .list .addButton a .btnAdd {
+  .bodyClass .list .addButton a .btnAdd {
     width: 100%;
     height: 100%;
     font-size: 1.8rem;
   }
-  body .list .showContainer .boderInput div .labelInput {
+  .bodyClass .list .showContainer .boderInput div .labelInput {
     font-size: 1.8rem;
   }
 }
