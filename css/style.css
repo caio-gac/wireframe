@@ -734,8 +734,8 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
 }
 
 body .principal {
@@ -777,11 +777,25 @@ body .content-principal {
 }
 
 .form .full-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 25px;
   color: #767676;
 }
 
 .form #inp-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   border-radius: 5px;
   height: 70px;
@@ -791,6 +805,13 @@ body .content-principal {
 }
 
 .form .nickname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 60px;
   color: #767676;
 }
