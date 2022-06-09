@@ -2,16 +2,17 @@
     <div class="group-linkedin">
         <div class="linkgit">
             <label for="">Linkedin</label>
-            <input type="text" name="" id="inp-linkgit" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" >
+            <input type="text" name="" id="inp-linkgit" class="inp-git" onfocusout="ValidateUrl()" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" >
         </div>
     </div>
     <div class="group-github">
         <div class="linkgit">
             <label for="">Github*</label>
-            <input type="text" name="" id="inp-linkgit" placeholder="https://github.com/foobar" required>
+            <input type="text" name="" id="inp-linkgit" class="inp-link" onfocusout="ValidateUrl()" placeholder="https://github.com/foobar" required>
         </div>
     </div>
-    <div class="">
-        <button  class="button1" onclick="changePage('_certificate', 'content')"> Next  <img src="../img/next.png"></button>
+    <div class="btn1">
+        <button class="button1" onclick="changePage('_certificate', 'content')"> Next  <img src="../img/next.png"></button>
     </div>
+    <script src="/js/url_validate.js"></script>
 </div>

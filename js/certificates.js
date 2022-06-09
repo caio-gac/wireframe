@@ -6,6 +6,8 @@ let qtCert = 1;
 // Adiciona div de certificado
 function addDiv() {
     let DOMCertContainer = document.getElementById("certificates-conteiner");
+    let DOMcertificates = document.querySelectorAll(".cert");
+    console.log(DOMcertificates);
     event.preventDefault();
     if (qtCert < 5) {
         let div = document.createElement("div");

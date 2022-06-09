@@ -17,7 +17,7 @@ function teste(){
     "month = " +input6+ " " +
     "year = " +input7+ " " +
     "checkbox = " +input8
-]
+    ]
     localStorage.setItem('name', listTemp)
     localStorage.getItem('name')
 }

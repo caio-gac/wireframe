@@ -11,12 +11,12 @@ function validate(){
     }
     if(inputEmail==null || inputEmail==""){
         alert('Por favor preencha o campo nome');
-        document.querySelector('Email').focus();
+        document.querySelector('#Email').focus();
         return false;     
     }
     if(inputEmail==null || inputEmail==""){
         alert('Por favor preencha o campo nome');
-        document.querySelector('email').focus();
+        document.querySelector('#email').focus();
         return false;     
     }
 }
