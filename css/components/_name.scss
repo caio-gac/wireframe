@@ -3,60 +3,47 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-size: 35px;
+    font-size: 14px;
     .full-name{
-        margin-top: 25px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
         color: #767676;
     }
     #inp-name{
-        width: 100%;
         border-radius: 5px;
-        height: 70px;
+        height: 40px;
         margin-top: 15px;
-        font-size: 30px;
+        font-size: 16px;
         border: 3px solid #AAAAAA;
     }
        
     .nickname{
-        margin-top: 60px;
+        margin-top: 40px;
         color: #767676;
+        display: flex;
+        flex-direction: column;
     }
     }
 
-    @media (min-width:1024px) and (max-width: 1024px) {
-        .form{
-            font-size: 20px;
-            .full-name{
-                margin-top: -30px;
-            }
-             #inp-name{
-                 height: 30px;
-                 margin-top: 10px;
-                 font-size: 20px;
-             }
-             .nickname{
-                margin-top: 30px;
-             }
+ 
+
+@media (min-width: 2560px){
+    .form{
+        font-size: 40px;
+        .full-name{
+            margin-top: 10px;
         }
-    }
-    @media (min-width:1440px) and (max-width: 1440px) {
-        .form{
-            font-size: 20px;
-            .full-name{
-                margin-top: -30px;
-            }
-             #inp-name{
-                 height: 30px;
-                 margin-top: 10px;
-                 font-size: 20px;
-             }
-             .nickname{
-                margin-top: 30px;
-             }
+        #inp-name{
+            height: 60px;
+            font-size: 35px;
+            margin-top: 20px;
+        }
+        .nickname{
+            margin-top: 60px;
         }
 
     }
 
-
-   
+}
 

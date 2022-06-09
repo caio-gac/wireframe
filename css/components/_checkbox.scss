@@ -1,30 +1,22 @@
 
 .checkbox{
-    margin-top: 100px;
+    margin-top: 45px;
     #inp-checkbox{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         box-shadow: 0px 3px 6px black   
     }
 }
 
+@media (min-width: 2560px){
+    .checkbox{
+        margin-top: 120px;
+        #inp-checkbox{
+            width: 40px;
+            height: 40px;
+            
+        }
+    }
+}
 
-@media (min-width:1024px) and (max-width: 1024px) {
-    .checkbox{
-        margin-top: 50px;
-        #inp-checkbox{
-            width: 20px;
-            height: 20px;
-        }
-    }
-}
-@media (min-width:1440px) and (max-width: 1440px) {
-    .checkbox{
-        margin-top: 50px;
-        #inp-checkbox{
-            width: 20px;
-            height: 20px;
-        }
-    }
-}
 

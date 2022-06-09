@@ -1,6 +1,6 @@
 .group-email{
     display: flex;
-    margin-top: 60px;
+    margin-top: 48px;
     justify-content: space-between;
 
     .email{
@@ -9,10 +9,10 @@
         color: #767676;
         }
         #inp-email{
-            width: 110%;
-            height: 70px;
+            width: 10px;
+            height: 40px;
             border-radius: 5px;
-            font-size: 30px;
+            font-size: 16px;
             margin-top: 5px;
             border: 3px solid #AAAAAA;
         }
@@ -22,47 +22,102 @@
         color: #767676;
         }
         #inp-phone{
-            height: 70px;
+            width: 290px;
+            height: 40px;
             border-radius: 5px;
-            font-size: 30px;
+            font-size: 16px;
             margin-top: 5px;
             border: 3px solid #AAAAAA;
         }
+       
 }
 
-@media (min-width:1024px) and (max-width: 1024px) {
+@media (min-width: 320px) {
     .group-email{
         margin-top: 30px;
-    .email
-        #inp-email{
-            height: 30px;
-            font-size: 20px;
-        }
-    .phone{
-            #inp-phone{
-                height: 30px;
-                font-size: 20px;
+        .email{
+            #inp-email{
+              width: 150px;
             }
-        
         }
-    
-}
-}
-@media (min-width:1440px) and (max-width: 1440px) {
+            .phone{
+             #inp-phone{
+                width: 120px;
+                }
+
+            }
+        }
+    }
+
+@media (min-width: 375px) {
     .group-email{
         margin-top: 30px;
-    .email
-        #inp-email{
-            height: 30px;
-            font-size: 20px;
-        }
-    .phone{
-            #inp-phone{
-                height: 30px;
-                font-size: 20px;
+        .email{
+            #inp-email{
+              width: 170px;
             }
-        
         }
+            .phone{
+             #inp-phone{
+                width: 140px;
+                }
+
+            }
+        }
+    }
+@media (min-width: 425px) {
+        .group-email{
+            margin-top: 30px;
+            .email{
+                #inp-email{
+                  width: 190px;
+                }
+            }
+                .phone{
+                 #inp-phone{
+                    width: 160px;
+                    }
     
-}
-}
+                }
+            }
+        }
+@media (min-width: 1024px) {
+            .group-email{
+                margin-top: 30px;
+                .email{
+                    #inp-email{
+                      width: 400px;
+                    }
+                }
+                    .phone{
+                     #inp-phone{
+                        width: 300px;
+                        }
+        
+                    }
+                }
+            }
+    
+
+@media (min-width: 2560px){
+    .group-email{
+        margin-top: 60px;
+        .email{
+            #inp-email{
+              height: 60px;
+              margin-top: 20px;
+              font-size: 35px;
+              width: 800px;
+            }
+        }
+            .phone{
+             #inp-phone{
+                 height: 60px;
+                 margin-top: 20px;
+                 font-size: 35px;
+                width: 700px;
+                }
+
+            }
+        }
+    }

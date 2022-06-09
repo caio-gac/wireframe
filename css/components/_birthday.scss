@@ -1,17 +1,17 @@
 .birthday{
     display:flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 10px;
     .text{
-        margin-top: 20px;
-        font-size: 40px;
+        margin-top: 33px;
+        font-size: 18px;
         color: #767676;
     }
 
     .group-date{
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
+        margin-top: 14px;
         
     }
     .date {
@@ -21,117 +21,164 @@
     }
     
     #day{
-        width: 150px;
-        height: 70px;
+        width: 115px;
+        border-radius: 5px;
+        height: 40px;
         border: 3px solid #AAAAAA;
         margin-top: 10px;
-        font-size: 18px;
-        color: #767676;
+        font-size: 16px;
        
     }
     #month{
-        width: 180px;
-        height: 70px;
+        width: 115px;
+        border-radius: 5px;
+        height: 40px;
         border: 3px solid #AAAAAA;
         margin-top: 10px;
         font-size: 18px;
-        color: #767676;
        
+    }
+    .day-month{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        margin-right: 250px;
+        
     }
 
     #year{
-        width: 180px;
-        height: 70px;
+        width: 115px;
+        border-radius: 5px;
+        height: 40px;
         border: 3px solid #AAAAAA;
         margin-top: 10px;
-        font-size: 18px;
-        color: #767676;
+        font-size: 16px;
+
         
     }
     #inp-age{
-        width: 180px;
-        height: 70px;
+        width: 115px;
+        border-radius: 5px;
+        height: 32px;
         border: 3px solid #AAAAAA;
         margin-top: 10px;
-        font-size: 18px;
-        color: #767676;
+        font-size: 16px;
+    }
+    .year-age{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+     
+     
     }
 
 }
 
-@media (min-width:1024px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 425px){
     .birthday{
-        margin-top: 30px;
-    
-    .text{
-        margin-top: 10px;
-        font-size: 25px;
-    }
-    .group-date{
-        margin-top: 20px;
-    }
-    .date{
-    #day{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
-       
-    }
-    #month{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
-       
-    }
-    #year{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
+        .group-date{
+            flex-direction: column;
+        }
+            .day-month{
+                justify-content: space-between;
+                width: 100%;
+            
+            #day{
+                width: 150px;
+            }
+            #month{
+                width: 150px;
+            }
+        }
+            .year-age{
+                justify-content: space-between;
+                margin-top: 20px;
+                width: 100%;
+            }
+            #year{
+                width: 150px;
+            }
+            #inp-age{
+                width: 140px;
+            }
         
-    }
-    #inp-age{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
-    }
+        }
+
 }
-}
-}
-@media (min-width:1440px) and (max-width: 1440px) {
+
+@media (min-width: 768px) and (max-width: 1023px){
     .birthday{
-        margin-top: 30px;
-    
-    .text{
-        margin-top: 10px;
-        font-size: 25px;
-    }
-    .group-date{
-        margin-top: 20px;
-    }
-    .date{
-    #day{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
-       
-    }
-    #month{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
-       
-    }
-    #year{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
+        .group-date
+            .day-month{
+                margin-right: 100px;
         
+        }
     }
-    #inp-age{
-        height: 30px;
-        margin-top: 10px;
-        font-size: 18px;
+
+}
+
+
+
+@media (min-width: 2560px){
+    .birthday{
+        margin-top: 40px;
+        .text{
+            margin-top: 30px;
+            font-size: 50px;
+            
+        }
+    
+        .group-date{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            
+        }
+        .date
+        #day{
+            width: 200px;
+            height: 60px;
+            margin-top: 20px;
+            font-size: 25px;
+           
+        }
+        #month{
+            width: 200px;
+            height: 60px;
+            margin-top: 20px;
+            font-size: 25px;
+           
+        }
+        .day-month{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin-right: 500px;
+            
+        }
+    
+        #year{
+            width: 200px;
+            height: 60px;
+            margin-top: 20px;
+            font-size: 25px;
+    
+            
+        }
+        #inp-age{
+            width: 200px;
+            height: 60px;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        .year-age{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+         
+         
+        }
+    
     }
 }
-}
-}
+
