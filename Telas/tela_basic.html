@@ -1,11 +1,12 @@
-<div class="form" id="1" onload="getTemp()">
+<div class="form">
     <div class="full-name">
         <label for="">Full Name*</label>
-        <input id="inp-name" class="inp-name" type="text" required placeholder="Foo Bar" onfocusout="teste()">
+        <input id="inputName" class="inp-name" type="text"  required placeholder="Foo Bar" onfocusout="teste()">
+        <input id="testeName" type="text">
     </div>
     <div class="nickname">
         <label for="">Nickname</label>
-        <input id="inp-name" class="inp-nickname" type="text" placeholder="Juanito" onfocusout="teste()">
+        <input id="inp-nickname" class="inp-nickname" type="text" placeholder="Juanito" onfocusout="teste()">
     </div>
     <div class="group-email">
         <div class="email">
@@ -51,7 +52,7 @@
         <input id="inp-checkbox" type="checkbox" onfocusout="teste()" checked> I accept the terms and privacy</input>
     </div>   
     <div class="btn">
-        <button  class="button" onclick="changePage('_social', 'content')"> Next  <img src="../img/next.png"></button>
+        <button  class="button" onclick="changePage('_social', 'content');"> Next  <img src="../img/next.png"></button>
     </div> 
         
         <script src="/js/function.js"></script>

@@ -1,25 +1,24 @@
 function teste(){
-    let listTemp = [];
-    let input1 = document.querySelector('.inp-name').value;
-    let input2 = document.querySelector('.inp-nickname').value;
-    let input3 = document.querySelector('.inp-email').value;
-    let input4 = document.querySelector('.inp-phone').value;
-    let input5 = document.querySelector('.inp-day').value;
-    let input6 = document.querySelector('.inp-month').value;
-    let input7 = document.querySelector('.inp-year').value;
-    let input8 = document.querySelector('.inp-check');
-    // console.log(input1)
-    listTemp = ['name = '+ input1+ " " +
-    "nick name = " +input2+ " " +
-    "email = " +input3+ " " +
-    "phone = " +input4+ " " +
-    "day = " +input5+ " " +
-    "month = " +input6+ " " +
-    "year = " +input7+ " " +
-    "checkbox = " +input8
-    ]
-    localStorage.setItem('name', listTemp)
-    localStorage.getItem('name')
+    
+    let nameTemp = document.querySelector('.inp-name');
+    let nickTemp = document.querySelector('.inp-nickname');
+    let emailTemp = document.querySelector('.inp-email');
+    let phoneTemp = document.querySelector('.inp-phone');
+    let dayTemp = document.querySelector('.inp-day');
+    let monthTemp = document.querySelector('.inp-month');
+    let yearTemp = document.querySelector('.inp-year');
+    let checkTemp = document.querySelector('.inp-check');
+
+    localStorage.setItem('name', nameTemp.value)
+    localStorage.setItem('nickname', nickTemp.value)
+    localStorage.setItem('email', emailTemp.value)
+    localStorage.setItem('phone', phoneTemp.value)
+    localStorage.setItem('day', dayTemp.value)
+    localStorage.setItem('month', monthTemp.value)
+    localStorage.setItem('year', yearTemp.value)
+    localStorage.setItem('check', checkTemp)
+    // localStorage.setItem('name', listTemp)
+    // document.querySelector('.inp-name') = localStorage.getItem('name')
 }
 
 // function teste1(){
@@ -38,11 +37,71 @@ function teste(){
 //     localStorage.getItem('name')
 // }
 
+function tempSocial(){
+    let gitTemp = document.querySelector('.inp-git');
+    let linkTemp = document.querySelector('.inp-link');
 
-function getTemp(){
-    document.getElementById('name').value = localStorage.getItem('name')
+    localStorage.setItem('git', gitTemp.value)
+    localStorage.setItem('linkedin', linkTemp.value)
 }
 
+// function getTemp(){
+//     name1 =  localStorage.getItem('name');
+//     console.log(name1)
+//     document.querySelector('.inp-name').value = name1 ;
+// }
+
+
+
+// let nameTemp = document.querySelector('.inp-name');
+// let name1 =  localStorage.getItem('name');
+// console.log(nameTemp.value)
+// if (name1) {
+//     console.log(name1)
+// }
+// var name1 =  localStorage.getItem('name');
+// console.log(name1);
+// window.addEventListener('load', function() {
+    
+//     console.log(name1);
+//     document.querySelector('.inp-name').value = name1;
+//     })
+
+// console.log(name1)
+
+// document.getElementsByClassName('inp-name').value = localStorage.getItem('name')
+// let nameValue = document.querySelector('.inp-name')
+// console.log(nameValue.value)
+
+function teste1() {
+    const name1 =  localStorage.getItem('name');
+    // console.log(name1,'text')
+
+    const inputName = document.getElementById('testeName')
+    inputName.value = name1
+
+        // if (name1 !== '') {
+        // // console.log(nameValue.value)
+        // console.log(name1)
+        // console.log(document.getElementById('inp-name').value)
+        
+    // }
+    // document.getElementById('inputName').value = name1;
+    
+}
+// document.querySelector('.inp-name').value = 
+teste1()
+
+// function teste1(){
+//     let nameTemp = document.querySelector('.inp-name')
+//     let name1 = localStorage.getItem('name')
+//     let name2 = ''
+//     if (name1 !== '') {
+//         console.log(name1)
+//     }
+// }
+
+// console.log(window.location.href)
 
 // function tempLocal(temp_ids){
 //     let input1Value = input1.value;
