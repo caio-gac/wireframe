@@ -768,6 +768,11 @@ body .content-principal {
     font-size: 35px;
     margin-top: 20px;
   }
+  .form #inp-nickname {
+    height: 60px;
+    font-size: 35px;
+    margin-top: 20px;
+  }
   .form .nickname {
     margin-top: 60px;
   }
