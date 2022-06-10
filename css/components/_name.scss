@@ -9,7 +9,14 @@
         flex-direction: column;
         color: #767676;
     }
-    #inp-name{
+    #inp-name {
+        border-radius: 5px;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 16px;
+        border: 3px solid #AAAAAA;
+    }
+    #inp-nickname {
         border-radius: 5px;
         height: 40px;
         margin-top: 15px;
@@ -18,7 +25,7 @@
     }
        
     .nickname{
-        margin-top: 40px;
+        margin-top: 30px;
         color: #767676;
         display: flex;
         flex-direction: column;

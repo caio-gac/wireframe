@@ -736,8 +736,16 @@ body .content-principal {
   border: 3px solid #AAAAAA;
 }
 
+.form #inp-nickname {
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: 3px solid #AAAAAA;
+}
+
 .form .nickname {
-  margin-top: 40px;
+  margin-top: 30px;
   color: #767676;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -906,6 +914,8 @@ body .content-principal {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 14px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .birthday .date {
@@ -943,11 +953,10 @@ body .content-principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 40%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 200px;
 }
 
 .birthday #year {
@@ -974,7 +983,7 @@ body .content-principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 40%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1014,13 +1023,6 @@ body .content-principal {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .birthday .group-date
-.day-month {
-    margin-right: 100px;
-  }
-}
-
 @media (min-width: 2560px) {
   .birthday {
     margin-top: 40px;
@@ -1055,11 +1057,9 @@ body .content-principal {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: 500px;
   }
   .birthday #year {
     width: 200px;
@@ -1077,7 +1077,6 @@ body .content-principal {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

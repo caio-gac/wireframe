@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 14px;
+        flex-wrap: wrap;
         
     }
     .date {
@@ -42,9 +43,9 @@
     }
     .day-month{
         display: flex;
-        width: 50%;
+        width: 40%;
         justify-content: space-between;
-        margin-right: 200px;
+       
         
     }
 
@@ -70,7 +71,7 @@
     }
     .year-age{
         display: flex;
-        width: 50%;
+        width: 40%;
         justify-content: space-between;
      
      
@@ -110,16 +111,6 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-    .birthday{
-        .group-date
-            .day-month{
-                margin-right: 100px;
-        
-        }
-    }
-
-}
 
 
 
@@ -155,9 +146,9 @@
         }
         .day-month{
             display: flex;
-            width: 50%;
+            
             justify-content: space-between;
-            margin-right: 500px;
+            
             
         }
     
@@ -177,7 +168,7 @@
         }
         .year-age{
             display: flex;
-            width: 50%;
+          
             justify-content: space-between;
          
          
